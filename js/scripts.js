@@ -5,7 +5,8 @@ d3.selectAll('.paragraph')
     .style("font-size", (size) => `${size}px`);
 
 
-d3.select('noParagraphsPresent') // met #noPragraphsPresent wordt het eerste item in drray overgeslagen?
+d3.select('#noParagraphsPresent')
+    .selectAll('p')
     .data(sizes)
     .enter()
     .append('p')
